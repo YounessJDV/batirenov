@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"/>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet"/>
+
+    <!-- FONT Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- FONT MONSERRAT & OPEN-SANS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css"/> 
+    <script src="monscript.js"></script>  
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <!-- AOS ANIMATION -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- COUNTER ANIMATION -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    
+    <!-- CAROUSEL SLIDER -->
+    <!-- Font Awesome -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+
+
+      <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+
+</head>
+<body>
+    
+<!------------------------------------------------------
+   NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR 
+  ------------------------------------------------------->
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3  position-sticky sticky-top" style="box-shadow: 0px 15px 10px -15px #111;">
+    <div class="container">
+      <div id="nav-logo-container" class="d-flex align-items-center">
+        <img src="./image/Composition 2/Composition 2/Composition 2_00000.png">
+        <a href="index.html" class="nav-logo" id="about">RENOV' BATIMENT</a>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto ">
+          <li class="nav-item ">
+            <a href="index.html#accueil" class="nav-liens">Accueil</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#services" class="nav-liens dropdown-toggle  active-link" role="button" data-bs-toggle="dropdown" aria-expanded="false">Nos services</a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+              <li><a class="dropdown-item" style="color: #ca363a;" href="maconnerie.html">Maçonnerie</a></li>
+              <li><a class="dropdown-item" href="crepissage.html">Crépissage</a></li>
+              <li><a class="dropdown-item" href="travauxpublics.html">Travaux publics</a></li>
+            </ul>
+          </li>
+          <!-- <li class="nav-item">
+            <a href="#realisations" class="nav-liens" id="about">Nos Réalisations</a>
+          </li> -->
+          <li class="nav-item">
+            <a href="contact.html" class="nav-liens">Contact</a>
+          </li>
+         <li class="nav-item">
+              <a href="contact.html" class="nav-liens devis-link">DEMANDER UN DEVIS</a>
+           </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+<!----------------------------------------------------------------
+Maçonnerie_hero maçonnerie_hero maçonnerie_hero maçonnerie_hero 
+------------------------------------------------------------------>
+
+<section class="maconnerie_hero">
+  <div>
+    <div class="maconnerie-container text-center white">
+        <h1 class="underline_red">Maçonnerie</h1>
+    </div>
+  </div>
+</section>
+
+<!------------------------------------------------------
+Maçonnerie_section_1 Maçonnerie_section_1 Maçonnerie_sec
+------------------------------------------------------->
+<!-- <section class="maconnerie_section_1 p-5">
+
+    <div class="container p-lg-5">
+      <div class="row">
+
+        <div class="col-12 col-lg-6 text-center">
+          <p style="font-size: 3em; font-family: 'Roboto'; font-weight: 600; letter-spacing: 2px;">Maçonnerie :</p>
+        </div>
+
+        <div class="col-12 col-lg-6 py-4" style="font-family: 'Roboto'; font-weight: 500;">
+          <h2>Quels travaux de maçonnerie ?</h2>
+          <p>Les travaux de maçonnerie dans une maison interviennent dans quatre principaux cas : <br><br>
+
+            <ul>
+              <li>- Quand le gros œuvre est endommagé par des fissures, de l’humidité (salpêtre), des éboulements.</li>
+              <li>- Quand l’on souhaite modifier un bâtiment (ajout / agrandissement d’ouvertures, surélévation de toiture, etc…).</li>
+              <li>- Dans le cadre de la construction d’une extension.</li>
+              <li>- Enfin, dans le cadre d’aménagements extérieurs.</li>
+            </ul>
+          </p>
+        </div>
+        
+      </div>
+    </div>
+
+  </section> -->
+
+  <section class="maconnerie_section_1 p-5">
+    <div class="container p-lg-5">
+      <div class="row">
+        <div class="col-12 text-center">
+          <p style="font-size: 3em; font-family: 'Roboto'; font-weight: 600; letter-spacing: 2px; border-top: 3px solid black; border-bottom: 3px solid black;">CONTENU ?</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+<!------------------------------------------------------
+Gallery Section Gallery Section Gallery Section Gallery 
+------------------------------------------------------->
+
+<section id="gallery" class="gallery py-5">
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <h1 style="margin-bottom: 50px;" class="text-center underline_red">Nos réalisations :</h1>
+
+    <div class="row g-0">
+
+      <div class="col-md-4">
+        <div class="gallery-item">
+          <a href="assets/img/gallery/gallery-1.jpg" class="gallery-lightbox" data-gall="gallery-item">
+            <img src="assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="gallery-item">
+          <a href="assets/img/gallery/gallery-2.jpg" class="gallery-lightbox" data-gall="gallery-item">
+            <img src="assets/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="gallery-item">
+          <a href="assets/img/gallery/gallery-3.jpg" class="gallery-lightbox" data-gall="gallery-item">
+            <img src="assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="gallery-item">
+          <a href="assets/img/gallery/gallery-4.jpg" class="gallery-lightbox" data-gall="gallery-item">
+            <img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="gallery-item">
+          <a href="assets/img/gallery/gallery-5.jpg" class="gallery-lightbox" data-gall="gallery-item">
+            <img src="assets/img/gallery/gallery-5.jpg" alt="" class="img-fluid">
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="gallery-item">
+          <a href="assets/img/gallery/gallery-6.jpg" class="gallery-lightbox" data-gall="gallery-item">
+            <img src="assets/img/gallery/gallery-6.jpg" alt="" class="img-fluid">
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="gallery-item">
+          <a href="assets/img/gallery/gallery-7.jpg" class="gallery-lightbox" data-gall="gallery-item">
+            <img src="assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="gallery-item">
+          <a href="assets/img/gallery/gallery-8.jpg" class="gallery-lightbox" data-gall="gallery-item">
+            <img src="assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid"><p></p>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="gallery-item">
+          <a href="assets/img/gallery/gallery-8.jpg" class="gallery-lightbox" data-gall="gallery-item">
+            <img src="assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section><!-- End Gallery Section -->
+
+
+<!------------------------------------------------------
+Maconnerie_Retrouve Maconnerie_Retrouve Maconnerie_Retro
+------------------------------------------------------->
+
+<section style="background-color: #212529; color: white;" class="retrouve py-5">
+  <div class="container py-0 py-md-4">
+    <div class="row d-flex flex-column text-center">
+      <div class="col">
+        <h3>Découvrez aussi nos autres services :</h3>
+      </div>
+
+      <div class="col py-0 py-md-5">
+        <ul>
+          <li><a href="maconnerie.html" class="active-link bold">Maçonnerie</a></li>
+          <li><a href="crepissage.html">Crépissage</a></li>
+          <li><a href="travauxpublics.html">Travaux publics</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<style>
+
+.retrouve ul li {
+
+  margin: 0px 10px;
+  font-size: 1.1em;
+  font-weight: 400;
+  text-decoration: underline;
+  text-underline-offset: 0.3em;
+
+}
+
+.retrouve ul li a:hover{
+
+  cursor: pointer;
+  color: #ca363a;
+  transition: 0.3s all ease-out;
+
+}
+
+</style>
+
+
+<!------------------------------------------------------
+MAPS MAPS MAPS MAPS MAPS MAPS MAPS MAPS MAPS MAPS MAPS 
+------------------------------------------------------->
+  <div class="map-container">
+    <iframe id="maps" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10563.385448052426!2d7.7336036!3d48.5553365!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1a26d013eb45dea1!2sRenov%20Batiment!5e0!3m2!1sen!2sfr!4v1640196090703!5m2!1sen!2sfr" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>  
+  </div>
+
+
+<!------------------------------------------------------
+    FOOTER 1 FOOTER 1 FOOTER 1 FOOTER 1 FOOTER 1 FOOTER 1 
+  ------------------------------------------------------->
+  <footer id="footer" class="footer p-5 bg-dark text-white position-relative">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-4">
+              <div class="info d-flex flex-column">
+                <div class="address">
+                  <i class="bi bi-geo-alt"></i>
+                  <h4>Localisation :</h4>
+                  <p>67100 Strasbourg, France</p>
+                  <p>56 rue des frères Eberts</p>
+                </div>
+  
+                <div class="email">
+                  <i class="bi bi-envelope"></i>
+                  <h4>Email :</h4>
+                  <p>renovbatiment@contact.fr</p>
+                </div>
+  
+                <div class="phone">
+                  <i class="bi bi-phone"></i>
+                  <h4>Téléphone :</h4>
+                  <p>03.88.52.62.32</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="info d-flex flex-column">
+                <div class="horraire">
+                  <i class="bi bi-clock"></i>
+                  <h4>Horaires :</h4>
+                  <p>Lundi à vendredi : 08h00 - 16h00</p>
+                  <p>Week-end : 08h00 - 16h00</p>
+                </div>
+  
+                <div class="footer_about">
+                  <i class="bi bi-question-circle-fill"></i>
+                  <h4>A propos :</h4>
+                  <p><a href="#">Mentions Légales</a></p>
+                  <p><a href="#">Politique de confidentialité</a></p>
+                  <p><a href="#">Conditions générales de vente</a></p>
+                  <p><a href="#">Nous contacter</a></p>
+                </div>
+
+              </div>
+            </div>
+            
+            <div class="col-12 col-lg-4">
+              <img class="img-fluid"  src="image/logo_test2.jpg">
+            </div>
+
+        </div>
+    </div>
+  </footer>
+  
+<!------------------------------------------------------
+FOOTER 2 FOOTER 2 FOOTER 2 FOOTER 2 FOOTER 2 FOOTER 2 
+------------------------------------------------------->
+
+<hr style=" color: white; width: 70%; margin: auto;">
+
+<section class="py-2" style="background-color: #212529;">
+<div class="container d-flex justify-content-center">
+  <div class="row text-center">
+    <div class="col-12 ">
+      <p style="color: white; padding: 0; margin: 0;"><span style="font-weight: bold;">RENOV Batiment</span> Copyright 2021 © | Designed by <span style="color: red;">Jounidov Youness</span>.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<div style="height: 5px; background-color: #212529;"></div>
+
+<!------------------------------------------------------
+BOUTON BACK TO TOP  BOUTON BACK TO TOP  BOUTON BACK TO TOP
+------------------------------------------------------->
+<a href="#" style="position: fixed; bottom: 20px; right: 20px; color: #ca363a;">
+<i class="bi bi-arrow-up-square-fill h1 btn-bottom"></i>
+</a>
+
+
+<!------------------------------------------------------
+SCRIPTS SCRIPTS SCRIPTS SCRIPTS SCRIPTS SCRIPTS SCRIPTS 
+------------------------------------------------------->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous">
+</script>
+
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
+
+<script>
+  mapboxgl.accessToken =
+  'pk.eyJ1IjoiYnRyYXZlcnN5IiwiYSI6ImNrbmh0dXF1NzBtbnMyb3MzcTBpaG10eXcifQ.h5ZyYCglnMdOLAGGiL1Auw'
+  var map = new mapboxgl.Map({
+  container: 'map',
+  style: 'mapbox://styles/mapbox/streets-v11',
+  center: [-71.060982, 42.35725],
+  zoom: 18,
+})
+</script>
+
+<script>
+$(document).ready(function(){
+  $('.counter').counterUp({
+    delay: 10,
+    time: 1200
+  });
+});
+</script>
+
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js"
+></script>
+
+<!-- Vendor JS Files -->
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

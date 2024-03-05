@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"/>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet"/>
+    <!-- FONT Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- FONT MONSERRAT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+    <script src="monscript.js"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&family=Satisfy&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+  <!------------------------------------------------------
+   NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR 
+  ------------------------------------------------------->
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3  position-sticky sticky-top" style="box-shadow: 0px 15px 10px -15px #111;">
+    <div class="container">
+      <div id="nav-logo-container" class="d-flex align-items-center">
+        <img src="./image/Composition 2/Composition 2/Composition 2_00000.png">
+        <a href="index.html" class="nav-logo" id="about">RENOV' BATIMENT</a>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto ">
+          <li class="nav-item ">
+            <a href="index.html#accueil" class="nav-liens">Accueil</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#services" class="nav-liens dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Nos services</a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+              <li><a class="dropdown-item" href="maconnerie.html">Maçonnerie</a></li>
+              <li><a class="dropdown-item" href="crepissage.html">Crépissage</a></li>
+              <li><a class="dropdown-item" href="travauxpublics.html">Travaux publics</a></li>
+            </ul>
+          </li>
+          <!-- <li class="nav-item">
+            <a href="#realisations" class="nav-liens" id="about">Nos Réalisations</a>
+          </li> -->
+          <li class="nav-item">
+            <a href="contact.html" class="nav-liens  active-link">Contact</a>
+          </li>
+         <li class="nav-item">
+              <a href="contact.html" class="nav-liens devis-link">DEMANDER UN DEVIS</a>
+           </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+<!----------------------------------------------------------------
+CONTACT_HERO CONTACT_HERO CONTACT_HERO CONTACT_HERO CONTACT_HERO
+------------------------------------------------------------------>
+
+  <section class="contact_hero">
+    <div>
+      <div class="contact-container text-center white">
+          <h1 class="underline_red">Contact</h1>
+      </div>
+    </div>
+  </section>
+
+
+<!----------------------------------------------------------------
+CONTACT_FORM CONTACT_FORM CONTACT_FORM CONTACT_FORM CONTACT_FORM
+------------------------------------------------------------------>
+
+  <section class="contact-form section-bg" data-aos="fade-right" data-aos-duration="2000" data-aos-once='true'>
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-8 mt-5 mt-lg-0 ">       
+                <form method="POST" role="form" action="mailsend.php" class="php-email-form aos-init aos-animate p-4 " data-aos="fade-left">
+    
+    
+                  <div class="row d-flex flex-column">
+    
+                    <div class="col" style="background-color: rgb(248, 248, 248); padding: 20px 10px; border-top-left-radius: 20px; border-top-right-radius: 20px; border: solid 1px rgb(243, 243, 243);">
+                      <div class="section-title black" >
+                        <h2>Contactez-nous !</h2>
+                        <p>Vous nécessitez une intervention en maçonnerie, en crépis ou bien dans le domaine des travaux publics ? Contactez-nous tout simplement ici.</p>
+                      </div>
+                    </div>
+                        
+                    <div class="col" style="padding: 20px 10px; border: solid 1px rgb(243, 243, 243); border-top: none;">
+
+                        <div class="form-group pb-4">
+                          <p>Nom & Prénom *</p>
+                          <input type="text" name="nom" class="form-control" id="name" placeholder="John Doe" required="">
+                        </div>
+                        <div class="form-group mt-3 mt-md-0 pb-4">
+                          <p>E-mail *</p>
+                          <input type="email" class="form-control" name="mail" id="email" placeholder="EMAIL@renovbatiment.com" required="">
+                        </div>
+                        <div class="form-group mt-3 pb-4">
+                          <p>N° de téléphone *</p>
+                          <input type="tel" class="form-control" name="objet" id="tel" placeholder="06 81 XX XX XX" required="">
+                        </div>
+                        <div class="form-group mt-3 pb-4">
+                          <p>Objet *</p>
+                          <input type="text" class="form-control" name="objet" id="subject" placeholder="Objet" required="">
+                        </div>
+                        <div class="form-group mt-3 pb-4">
+                          <p>Message *</p>
+                          <textarea class="form-control" name="message" rows="5" placeholder="Ecrivez-ici..." required=""></textarea>
+                        </div>   
+
+                        <div class="text-center"><button type="submit" name="email">ENVOYER</button></div>
+
+                    </div>
+
+
+
+                  </div>
+                </form>
+            </div>
+        </div>
+    </div>
+  </section>
+
+
+<!----------------------------------------------------------------
+CONTACT_section_3 CONTACT_section_3 CONTACT_section_3 CONTACT_sect
+------------------------------------------------------------------>
+
+  <section class="contact_section_3 py-5">
+    <div class="section-title white" data-aos="fade-up" data-aos-duration="1200" data-aos-once='true'>
+        <h2 class="underline_red">Pour toute question : </h2>
+    </div>
+
+    <div class="container py-4">
+        <div class="row d-flex justify-content-center">
+
+            <div class="item col-11 my-3 col-lg-3 my-lg-0 d-flex flex-column justify-content-center text-center" style="height: 300px; border: white 1px solid;" data-aos="fade-up" data-aos-duration="1500" data-aos-once='true'>
+              <div>
+                <i class="bi bi-telephone-fill "></i>
+                <br><br>
+                <span>Appelez-nous :</span>
+              </div>
+              <div>
+                <br>
+                <p>07.81.90.51.92</p>
+              </div>  
+            </div>
+
+            <div class="item col-11 my-3 col-lg-3 my-lg-0 offset-lg-1 d-flex flex-column justify-content-center text-center" style="height: 300px; border: white 1px solid;" data-aos="fade-up" data-aos-duration="1750" data-aos-once='true'>
+                <div >
+                  <i class="bi bi-envelope-fill"></i>
+                  <br><br>
+                  <span>Envoyez un mail :</span>
+                </div>
+                <div>
+                    <br>
+                    <p>renovbatiment@gmail.com<br>
+                </div>
+            </div>
+
+            <div class="item col-11 my-3 col-lg-3 my-lg-0 offset-lg-1 d-flex flex-column justify-content-center text-center" style="height: 300px; border: white 1px solid;" data-aos="fade-up" data-aos-duration="2000" data-aos-once='true'>
+                <div>
+                    <div class="">
+                      <i class="bi bi-house-door-fill"></i>
+                      <br><br>
+                      <span>Sur place :</span>
+                  </div>
+                  <div>
+                    <!-- <h4>Sur place</h4> -->
+                    <p>
+                        51 rue des frères Eberts<br>
+                        67100, Strabourg
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+  <!------------------------------------------------------
+    MAPS MAPS MAPS MAPS MAPS MAPS MAPS MAPS MAPS MAPS MAPS 
+  ------------------------------------------------------->
+  <div class="map-container">
+    <iframe id="maps" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10563.385448052426!2d7.7336036!3d48.5553365!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1a26d013eb45dea1!2sRenov%20Batiment!5e0!3m2!1sen!2sfr!4v1640196090703!5m2!1sen!2sfr" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>  
+  </div>
+
+  
+  <!------------------------------------------------------
+    FOOTER 1 FOOTER 1 FOOTER 1 FOOTER 1 FOOTER 1 FOOTER 1 
+  ------------------------------------------------------->
+    <footer id="footer" class="footer p-5 bg-dark text-white position-relative">
+        <div class="container">
+            <div class="row">
+
+              <div class="col-lg-4">
+                <div class="info d-flex flex-column">
+                  <div class="address">
+                    <i class="bi bi-geo-alt"></i>
+                    <h4>Localisation :</h4>
+                    <p>67100 Strasbourg, France</p>
+                    <p>56 rue des frères Eberts</p>
+                  </div>
+      
+                  <div class="email">
+                    <i class="bi bi-envelope"></i>
+                    <h4>Email :</h4>
+                    <p>renovbatiment@contact.fr</p>
+                  </div>
+      
+                  <div class="phone">
+                    <i class="bi bi-phone"></i>
+                    <h4>Téléphone :</h4>
+                    <p>03.88.52.62.32</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="info d-flex flex-column">
+                  <div class="horraire">
+                    <i class="bi bi-clock"></i>
+                    <h4>Horaires :</h4>
+                    <p>Lundi à vendredi : 08h00 - 16h00</p>
+                    <p>Week-end : 08h00 - 16h00</p>
+                  </div>
+      
+                  <div class="footer_about">
+                    <i class="bi bi-question-circle-fill"></i>
+                    <h4>A propos :</h4>
+                    <p><a href="#">Mentions Légales</a></p>
+                    <p><a href="#">Politique de confidentialité</a></p>
+                    <p><a href="#">Conditions générales de vente</a></p>
+                    <p><a href="#">Nous contacter</a></p>
+                  </div>
+
+                </div>
+              </div>
+                
+              <div class="col-12 col-lg-4">
+                <img class="img-fluid"  src="image/logo_test2.jpg">
+              </div>
+  
+          </div>
+      </div>
+    </footer>
+    
+  <!------------------------------------------------------
+    FOOTER 2 FOOTER 2 FOOTER 2 FOOTER 2 FOOTER 2 FOOTER 2 
+  ------------------------------------------------------->
+
+  <hr style=" color: white; width: 70%; margin: auto;">
+
+  <section class="py-2" style="background-color: #212529;">
+    <div class="container d-flex justify-content-center">
+      <div class="row text-center">
+        <div class="col-12 ">
+          <p style="color: white; padding: 0; margin: 0;"><span style="font-weight: bold;">RENOV Batiment</span> Copyright 2021 © | Designed by <span style="color: red;">Jounidov Youness</span>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div style="height: 5px; background-color: #212529;"></div>
+
+  <!------------------------------------------------------
+  BOUTON BACK TO TOP  BOUTON BACK TO TOP  BOUTON BACK TO TOP
+  ------------------------------------------------------->
+  <a href="#" style="position: fixed; bottom: 20px; right: 20px; color: #ca363a;">
+    <i class="bi bi-arrow-up-square-fill h1 btn-bottom"></i>
+  </a>
+
+  <script>
+    AOS.init();
+  </script>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous">
+  </script>
+
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
+
+  <script>
+      mapboxgl.accessToken =
+      'pk.eyJ1IjoiYnRyYXZlcnN5IiwiYSI6ImNrbmh0dXF1NzBtbnMyb3MzcTBpaG10eXcifQ.h5ZyYCglnMdOLAGGiL1Auw'
+      var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/streets-v11',
+      center: [-71.060982, 42.35725],
+      zoom: 18,
+      })
+  </script>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+</body>
+</html>

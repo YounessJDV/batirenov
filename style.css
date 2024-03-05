@@ -1,0 +1,1154 @@
+/*--------------------------------------------------------------
+# General Section
+--------------------------------------------------------------*/
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+  
+}
+
+body {
+  font-size: 1em;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ----------- CLASSE UTILIATAIRES ---------- */
+
+.black {
+  color: black;
+}
+
+.white {
+  color: white;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* .underline_red {
+  text-decoration: underline red; 
+  text-underline-offset: 0.3em;
+} */
+
+.underline_red::after {
+  content: ' ';
+  display: block;
+  border: 1px solid #ca363a;
+  border-radius: 0px;
+  margin: 15px auto 0 auto;
+  width: 200px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgb(0 0 0 / 5%);
+  -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 5%);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.section-title h2 {
+  font-family: 'Montserrat';
+  font-size: 3em;
+  font-weight: 700;
+  margin-bottom: 15px;
+  padding-bottom: 0;
+}
+
+.section-title h3 {
+  /* width: 70%;
+  margin: auto; */
+  font-family: 'Montserrat';
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-bottom: 15px;
+  padding-bottom: 0;
+}
+
+.section-title p {
+  font-family: 'Montserrat';
+  margin-bottom: 0;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+@media (max-width:600px) {
+
+  .section-title h2 {
+    font-family: 'Montserrat';
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 15px;
+    padding-bottom: 0;
+  }
+  
+  .section-title h3 {
+    /* width: 70%;
+    margin: auto; */
+    font-family: 'Montserrat';
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 15px;
+    padding-bottom: 0;
+  }
+  
+  .section-title p {
+    font-family: 'Montserrat';
+    margin-bottom: 0;
+    font-size: 1.2em;
+    font-weight: 500;
+  }
+
+}
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------------
+    INDEX.HTML INDEX.HTML INDEX.HTML INDEX.HTML INDEX.HTML INDEX.HTML INDEX.HTML INDEX.HTML INDEX.HTML INDEX.HTML INDEX.HTML
+----------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+    HERO HERO HERO HERO HERO HERO HERO HERO HERO HERO HERO 
+--------------------------------------------------------------*/
+
+  #index_hero {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    background-image: url('./image/hero-bg-2.jpg');
+    box-shadow: inset 0 0 0 500px rgb(0 0 0 / 70%);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+
+  #index_hero .index_hero-container {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  #index_hero .index_hero_logo {
+    margin-bottom: 30px;
+  }
+  
+  #index_hero h2 {
+    color: white;
+    font-size: 1.7em;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 39px;
+    /*text-transform: uppercase;*/
+  }
+
+  #index_hero p {
+
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+
+  }
+
+  #index_hero br {
+    display: none;
+  }
+
+
+  #index_hero .btn-get-started {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 14px 30px;
+    margin: 10px;
+    color: #fff;
+    background: #ca363a;
+    /* border-radius: 5px; */
+  }
+  
+  #index_hero .btn-get-started:hover {
+    transition: 0.5s;
+    background: #fff;
+    color: black;
+  }
+
+  @media (min-width: 992px) {
+    #index_hero {
+      background-attachment: fixed;
+    }
+  }
+
+  @media (max-width: 768px) {
+    #index_hero h1 {
+      font-size: 24px;
+      line-height: 36px;
+    }
+    #index_hero h2 {
+      line-height: 39px;
+    }
+
+    #index_hero br {
+      display: block;
+    }
+
+    .index_container2 p{
+        font-size: 20px !important;
+    }
+    
+  }
+
+
+  .index_hero_apps {
+    position:relative;
+    display: flex;
+    justify-content: center;
+    top: 90vh;
+
+  }
+
+  .index_hero_apps_container a i {
+    color: white;
+     font-size: 35px;
+     margin: 0 10px;
+  }
+
+  .index_hero_apps_container a i:hover {
+    color: #ca363a;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+
+
+/*--------------------------------------------------------------
+   NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR
+--------------------------------------------------------------*/
+
+
+
+#nav-logo-container :hover {
+  color: #ca363a; 
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+#nav-logo-container i {
+  color: white;
+  font-size: 2em;
+}
+
+#nav-logo-container i:hover {
+  color: #ca363a; 
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+#nav-logo-container a {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.3em;
+    margin: 0 10px;
+    color: white; 
+}
+
+#nav-logo-container {
+  width: 300px;
+}
+
+#nav-logo-container img {
+  width: 20%;
+}
+
+@media (max-width: 991px) {
+
+  #nav-logo-container {
+    width: 80%;
+  }
+
+  #nav-logo-container img {
+    width: 15%;
+  }
+  
+  #navmenu ul {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+.nav-liens {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    margin: 0 10px;
+    color: white;  
+}
+    
+.nav-liens:hover {
+    color: #ca363a;
+    transition: 0.4s;
+}
+
+.active-link {
+    color: #ca363a;
+}
+
+.devis-link {
+    background-color: #ca363a;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.devis-link:hover {
+    background-color: white;
+    color: black;
+}
+
+
+@media (max-width: 991px) {
+    .nav-item {
+        margin: 20px;
+        text-align: center;
+    }
+  }
+
+
+/*--------------------------------------------------------------
+INDEX_ABOUT INDEX_ABOUT INDEX_ABOUT INDEX_ABOUT INDEX_ABOUT INDEX 
+--------------------------------------------------------------*/
+
+.index_about {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.index_about img {
+  border: white 10px solid;
+  box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+  
+}
+
+.index_about p, li {
+  padding-left: 3px;
+  font-size: 1.2em;
+}
+
+.index_about .container ul li {
+
+  font-size: 1.2em;
+  padding-bottom: 10px;
+  padding-left: 10px;
+
+}
+.index_about .container ul i {
+
+  font-weight: 600;
+  color: #ca363a;;
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+  font-size: 1.3em;
+
+}
+
+
+
+/*--------------------------------------------------------------
+INDEX_SERVICE INDEX_SERVICE INDEX_SERVICE INDEX_SERVICE INDEX_ 
+--------------------------------------------------------------*/
+
+#index_nos_services {
+  background-color: #24252A;
+  background-position: center center;
+  background-image: url('./image/hero-bg/background-2.jpg');
+  box-shadow: inset 0 0 0 500px rgb(0 0 0 / 70%);
+  background-size: cover;
+}
+
+@media (min-width: 992px) {
+  #index_nos_services {
+    background-attachment: fixed;
+  }
+}
+
+#index_nos_services .container .row .col {
+  transition: transform .2s;
+}
+
+#index_nos_services .container .row .col:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+#index_nos_services .container .row a {
+  margin: 0;
+  background-color: #ca363a;
+  color: white;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+#index_nos_services .container .row a:hover {
+  background-color: #df767a;
+  cursor: pointer;
+}
+
+#index_nos_services .card {
+  border: 0px solid white;
+  border-radius: 0rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#index_nos_services .card-body {
+  background-color: white;
+}
+
+#index_nos_services .card-img-top {
+  height: 15rem;
+  object-fit: cover;
+}
+
+
+
+@media (max-width: 992px) {
+
+
+#index_nos_services .container .row .col {
+  transition: none;
+}
+
+#index_nos_services .container .row .col:hover {
+  transform: none;
+}
+ }
+
+
+
+ /*------------------------------------------------------
+ INDEX_clients INDEX_clients INDEX_clients INDEX_clients 
+ -------------------------------------------------------*/
+
+#index_clients {
+
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+}
+
+#index_clients i {
+  font-size: 7em;
+  color: #ac0006;
+  float: left;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+ 
+#index_clients .section-title {
+  padding-bottom: 15px;
+}
+ 
+
+#index_clients .container .col-12 p {
+
+  font-size: 28px;
+
+}
+
+#index_clients .container h6 {
+
+font-size: 20px;
+
+}
+
+
+/*------------------------------------------------------
+INDEX_COMPTEUR INDEX_COMPTEUR INDEX_COMPTEUR INDEX_COMPT
+------------------------------------------------------- */
+
+.index_compteur {
+  background-color: #24252A;
+  background-position: center center;
+  background-image: url('./image/compteur_bg.jpg');
+  box-shadow: inset 0 0 0 500px rgb(0 0 0 / 70%);
+  background-size: cover;
+}
+
+@media (min-width: 992px) {
+  .index_compteur {
+    background-attachment: fixed;
+  }
+}
+
+.index_compteur .row div span:nth-child(1) {
+  padding-right: 2px;
+}
+
+.index_compteur .row div span {
+
+  font-family: 'Montserrat';
+  font-size: 4em;
+  font-weight: 700;
+  /* color:#ca363a; */
+  color: rgb(228, 0, 0);
+}
+
+.index_compteur .row div div:nth-child(2) {
+
+  font-size: 2em;
+  font-weight: 700;
+  /* color: #212529; */
+  color: white;
+}
+
+
+/*------------------------------------------------------
+  INDEX_certification INDEX_certification INDEX_Certificat
+------------------------------------------------------- */
+
+#index_certification {
+  padding-top: 150px;
+}
+
+
+@media (max-width: 992px) {
+
+  #index_certification .section-title p {
+    font-size: 1.1em;
+  }
+
+}
+
+
+/*--------------------------------------------------------------
+INDEX_FOURNISSEURS INDEX_FOURNISSEURS INDEX_FOURNISSEURS INDEX_
+--------------------------------------------------------------*/
+
+#index_fournisseurs {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+#index_fournisseur .container .row .col{
+  height: 150px;
+  width: 150PX;
+}
+
+/*--------------------------------------------------------------
+  INDEX_AVIS   INDEX_AVIS   INDEX_AVIS   INDEX_AVIS   INDE
+--------------------------------------------------------------*/
+
+.client_p {
+  color:#ff1f27; 
+  font-weight: 600;
+}
+
+
+/*--------------------------------------------------------------
+# MAPS  MAPS  MAPS  MAPS  MAPS  MAPS  MAPS  MAPS  MAPS  MAPS  MAPS  
+--------------------------------------------------------------*/
+  
+.map-container {
+  background-color: whitesmoke;
+  display: flex;
+  width: 100%;
+  margin: auto;
+  justify-items: center;
+  justify-content: center;
+}
+
+
+#maps {
+    display: flex;
+    width: 100%;
+    box-shadow: -0px 0.5px 10px #24252A;
+}
+
+@media (max-width: 1050px) {
+  #maps {
+      display: flex;
+      width: 100%;
+      height: 500px;
+  }
+}
+
+@media (max-width: 700px) {
+  #maps {
+      display: flex;
+      width: 100%;
+      height: 300px;
+  }
+}
+
+/*--------------------------------------------------------------
+FOOTER 1 FOOTER 1 FOOTER 1 FOOTER 1 FOOTER 1 FOOTER 1 
+--------------------------------------------------------------*/
+
+.footer .info {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  border-radius: 5px;
+}
+.footer i {
+  font-size: 20px;
+  color: white;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #ca363a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+.footer .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: white;
+}
+.footer .info p {
+  padding: 0 0 0 60px;
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+.footer .info .email, .phone, .footer_about {
+  margin-top: 40px;
+}
+
+/* .footer .info .email:hover i, .footer .info .address:hover i, .footer .info .phone:hover i {
+  background: grey;
+  color: white;
+  cursor: pointer;
+} */
+
+.footer .email i:hover, .address i:hover, .phone i:hover, .horraire i:hover, .footer_about i:hover {
+  background-color: grey;
+  cursor: pointer;
+}
+
+.footer_about a {
+  color: whitesmoke;
+}
+
+.footer_about a:hover {
+  color: #ca363a;
+}
+
+.footer_about p {
+  margin: 5px 0px;
+}
+
+.contact-btn-footer {
+  margin: 30px 0 30px 0;
+  background-color: #ca363a;
+}
+
+
+/*--------------------------------------------------------------
+BOUTON BACK TO TOP  BOUTON BACK TO TOP  BOUTON BACK TO TOP
+--------------------------------------------------------------*/
+.btn-bottom {
+  position: fixed;
+  bottom: 20px;
+   right: 20px;
+    color: #ca363a;
+}
+
+.btn-bottom:hover {
+  color: red;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #1a1814;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #1a1814;
+  border-top-color: #cda45e;
+  border-bottom-color: #cda45e;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*--------------------------------------------------------------
+# Gallery
+--------------------------------------------------------------*/
+.gallery .gallery-item {
+  overflow: hidden;
+  margin: 5px;
+  border-radius: 15px;
+}
+.gallery .gallery-item img {
+  transition: all ease-in-out 0.4s;
+}
+
+.gallery .gallery-item a {
+  border-radius: 10px;
+}
+
+
+
+.gallery .gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+
+/*----------------------------------------------------------------------------------------------------------------------------
+MACONNERIE.HTML MACONNERIE.HTML MACONNERIE.HTML MACONNERIE.HTML MACONNERIE.HTML MACONNERIE.HTML MACONNERIE.HTML MACONNERIE.HTML 
+----------------------------------------------------------------------------------------------------------------------------*/
+
+/*----------------------------------------
+maçonnerie_hero maçonnerie_hero maçonnerie
+----------------------------------------*/
+
+.maconnerie_hero {
+  background-image: url('image/services/maconnerie_page/hero_background.jpg');
+  box-shadow: inset 0 0 0 500px rgb(0 0 0 / 70%);
+  background-position: calc(100%) calc(100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto';
+
+}
+
+.maconnerie-container h1 {
+  font-size: 4em;
+  }
+
+  @media (max-width:768px) {
+    .maconnerie-container h1  {
+      font-size: 3em;
+      }
+  
+  }
+
+/*----------------------------------------
+Maçonnerie_section_1 Maçonnerie_section_1 
+----------------------------------------*/
+
+.maconnerie_section_1 ul {
+  padding: 0;
+}
+
+.maconnerie_section_1 ul li {
+  padding-top: 10px;
+}
+
+/*------------------------------------------------------
+Maconnerie_Retrouve Maconnerie_Retrouve Maconnerie_Retro
+-------------------------------------------------------*/
+
+
+
+
+.retrouve .container .row .col ul li {
+  display: inline-block;
+}
+
+.retrouve .container .row .col ul {
+  padding-left: 0em;
+}
+
+@media (max-width: 992px) {
+  .retrouve .container .row .col ul li {
+
+    padding-top: 15px;
+    display: block;
+  }
+}
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------
+CREPISSAGE.HTML CREPISSAGE.HTML CREPISSAGE.HTML CREPISSAGE.HTML CREPISSAGE.HTML CREPISSAGE.HTML CREPISSAGE.HTML CREPISSAGE.HTML 
+----------------------------------------------------------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------
+crepissage_hero crepissage_hero crepissage_hero crepissage_hero 
+--------------------------------------------------------------*/
+
+.crepissage_hero {
+  background-image: url('image/services/crepissage/hero_wallpaper.jpeg');
+  box-shadow: inset 0 0 0 500px rgb(0 0 0 / 80%);
+  background-position: calc(100%) calc(70%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto';
+
+}
+
+.crepissage-container h1 {
+  font-size: 4em;
+  }
+
+  @media (max-width:768px) {
+    .crepissage-container h1 {
+      font-size: 3em;
+      }
+    
+  
+  }
+
+  
+
+/*-----------------------------------------------------------
+Crépissage_section_1 Crépissage_section_1 Crépissage_section_1
+--------------------------------------------------------------*/
+
+.crepissage ul {
+  padding: 0;
+}
+
+.crepissage ul li {
+  padding-top: 10px;
+}
+
+
+/*----------------------------------------------------------------------------------------------------------------------------
+TRAUVAUXPUBLICS.HTML TRAUVAUXPUBLICS.HTML TRAUVAUXPUBLICS.HTML TRAUVAUXPUBLICS.HTML TRAUVAUXPUBLICS.HTML TRAUVAUXPUBLICS.HTML
+----------------------------------------------------------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------
+travauxpb_hero travauxpb_hero travauxpb_hero travauxpb_hero 
+--------------------------------------------------------------*/
+
+.travauxpb_hero {
+  background-image: url('image/services/travauxpb/hero_background.jpg');
+  box-shadow: inset 0 0 0 500px rgb(0 0 0 / 80%);
+  background-position: calc(100%) calc(50%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto';
+
+}
+
+.travauxpb-container h1 {
+  font-size: 4em;
+  }
+
+
+  @media (max-width:768px) {
+    .travauxpb-container h1 {
+      font-size: 3em;
+      }
+    
+  
+  }
+/*-----------------------------------------------------------
+Crépissage_section_1 Crépissage_section_1 Crépissage_section_1
+--------------------------------------------------------------*/
+
+.travauxpb ul {
+  padding: 0;
+}
+
+.travauxpb ul li {
+  padding-top: 10px;
+}
+
+
+/*----------------------------------------------------------------------------------------------------------------------------
+CONTACT.html CONTACT.html CONTACT.html CONTACT.html CONTACT.html CONTACT.html CONTACT.html CONTACT.html CONTACT.html CONTACT.html
+----------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------
+CONTACT_HERO CONTACT_HERO CONTACT_HERO CONTACT_HERO CONTACT_HERO 
+------------------------------------------------------------------*/
+
+
+.contact_hero {
+  background-image: url('image/contact/fond-wallpaper2.jpg');
+  box-shadow: inset 0 0 0 500px rgb(0 0 0 / 70%);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto';
+
+}
+
+.contact-container h1 {
+  font-size: 4em;
+  }
+
+@media (max-width:768px) {
+  .contact-container h1 {
+    font-size: 3em;
+    }
+
+  .contact_section_3 .section-title {
+    padding-bottom: 0px;
+  }
+}
+
+
+/*----------------------------------------------------------------
+CONTACT_FORM CONTACT_FORM CONTACT_FORM CONTACT_FORM CONTACT_FORM  
+------------------------------------------------------------------*/
+
+.contact-form {
+  font-family: 'Roboto';
+}
+
+.contact-form .section-title h2 {
+  font-family: 'Satisfy', cursive, sans-serif;
+  color: #ca363a;
+  letter-spacing: 2px;
+  font-size: 38px;
+}
+
+.contact-form .section-title p {
+  font-size: 19px;
+}
+
+.contact-form .php-email-form p {
+  margin: 0;
+  margin-left: 2px;
+  font-weight: 500;
+}
+
+.contact-form .php-email-form input, .contact .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.contact-form .php-email-form input {
+  height: 44px;
+  border: none;
+  border-bottom: rgb(209, 209, 209) 1px solid;
+  margin: 0px 0px 0px 2px; padding: 0;
+}
+
+.contact-form .php-email-form textarea {
+  padding: 10px 12px;
+  border: none;
+   border-bottom: rgb(209, 209, 209) 1px solid;
+    margin: 0px 0px 0px 2px;
+     padding: 0;
+}
+
+.contact-form .php-email-form button[type=submit] {
+  font-size: 1.1em;
+  font-weight: 600;
+  letter-spacing: 1PX;
+  background: #ca363a;
+  border: 0;
+  width: 80%;
+  padding: 10px;
+  margin-top: 20px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.contact-form .php-email-form button[type=submit]:hover {
+  background: rgb(230, 0, 0);
+}
+
+
+@media (max-width:768px) {
+  
+  .contact-form .section-title p {
+    font-size: 16px;
+    text-align: left;
+  }
+}
+
+/*----------------------------------------------------------------
+CONTACT_section_3 CONTACT_section_3 CONTACT_section_3 CONTACT_sect
+------------------------------------------------------------------*/
+
+.contact_section_3 {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #212529;
+}
+
+.contact_section_3 .container {
+  color: white;
+}
+
+
+.contact_section_3 .container .row i{ 
+  
+    font-size: 40px;
+    color: white;
+    width: 77px;
+    height: 77px;
+    margin: auto;
+    background: #ca363a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact_section_3 .container .row i:hover{ 
+  
+    color: #ca363a;
+    background: white;
+    cursor: pointer;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.contact_section_3 .container .row span{
+  margin-left: 10px;
+  font-size: 1.4em;
+  font-weight: 600;
+  }
+  
+.contact_section_3 .container .row P{
+  margin-left: 10px;
+  font-size: 1.2em;
+  }
+
+.contact_section_3 .container .row .item {
+  word-wrap:break-word;
+  border-radius: 10px;
+}
+
+/* .item::after, .item::before {
+  content: '';
+  flex: 1 1 auto;  the first digint is 'flex-grow: 1', helps elemet to occupy all free space  
+  border-bottom: solid 1px #ca363a;
+} */
+
+
+
+/*--------------------------------------------------------------
+# Clients
+--------------------------------------------------------------*/
+.index_fournisseurs {
+  padding-top: 20px;
+}
+.index_fournisseurs .swiper-slide img {
+  opacity: 0.5;
+  transition: 0.3s;
+  filter: grayscale(100);
+}
+.index_fournisseurs .swiper-slide img:hover {
+  filter: none;
+  opacity: 1;
+}
+.index_fournisseurs .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+.index_fournisseurs .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  background-color: #ddd;
+}
+.index_fournisseurs .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #ca363a;
+}
